@@ -1,0 +1,21 @@
+
+.breadcrumb{
+    color : #ec1e25;
+}
+
+.breadcrumb li::after {
+  content: '>';
+  margin-left: 5px;
+  margin-right : 5px;
+}
+
+
+
+.breadcrumb li:last-child::after {
+  content: '';
+    
+}
+
+.breadcrumb li:last-child{
+    color: #7e7f7f;
+}

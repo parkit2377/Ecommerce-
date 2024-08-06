@@ -1,0 +1,8 @@
+.custom-radio {
+  @apply appearance-none rounded-full h-4 w-4 border border-gray-300 checked:bg-[#ec1e24] checked:border-[#ec1e24] focus:outline-none;
+}
+
+.custom-radio:checked {
+  @apply bg-[#ec1e24] border-[#ec1e24] h-5 w-5 ;
+}
+

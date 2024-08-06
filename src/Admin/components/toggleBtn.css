@@ -1,0 +1,33 @@
+.myInput{
+    -webkit-appearance: none;
+    position : relative;
+    width:40px;
+    height:20px;
+    border-radius:25px;
+    transition : background .3s;
+    /* background-color : red; */
+    border: 1px solid #bfbfbf;
+    cursor: pointer;
+}
+
+.myInput::after{
+    content:'';
+    position:absolute;
+    border-radius:50%;
+    height : 15px;
+    width:15px;
+    background-color:#bfbfbf;
+    left:25%;
+    top:50%;
+    transform : translate(-50% , -50%);
+    transition : left .5s
+}
+
+.myInput:checked{
+    background-color:#3762ea;
+}
+
+.myInput:checked::after{
+    left:70%;
+    background-color:white;
+}
